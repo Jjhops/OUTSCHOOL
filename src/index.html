@@ -53,6 +53,15 @@
             <li><a href="#" class="burger__item-link">Contact Us</a></li>
           </ul>
         </nav>
+        <div id="btns" class="hidden animate-fadeIn pointer-events-none fixed w-full left-0 right-0 top-0 bottom-0 items-end justify-between gap-[2px]">
+          <a href="#" class="pointer-events-auto w-[50%] bg-[#FF00C7] py-2 text-center rounded-t-md hover:bg-[#e602b4] transition-colors">
+            <span class="font-medium text-xl text-white">Account</span>
+          </a>
+          <a href="#" class="pointer-events-auto w-[50%] bg-[#FF00C7] py-2 text-center rounded-t-md hover:bg-[#e602b4] transition-colors">
+            <span class="font-medium text-xl text-white">Cart</span>
+          </a>
+        </div>
+        
         <!-- Actions -->
         <div class="menu md:hidden">
           <a href="#" class="action__item">
@@ -75,7 +84,7 @@
         </div>
 
         <!-- Burger -->
-        <button id="burger" class="group hidden relative sm:block h-5 w-[30px]">
+        <button id="burger" class="group hidden relative sm:block h-5 w-[30px] z-[3]">
           <span class="absolute top-0 left-0 h-[1px] w-full bg-white group-[.active]:translate-y-2 group-[.active]:rotate-45 transition-transform"></span>
           <span class="absolute top-1/2 left-0 h-[1px] w-full bg-white group-[.active]:opacity-0 transition-opacity"></span>
           <span class="absolute bottom-0 left-0 h-[1px] w-full bg-white group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45 transition-transform"></span>
@@ -1343,7 +1352,7 @@
   <section class="pb-20">
     <div class="mx-auto -mt-[195px] grid max-w-[989px] grid-cols-3 gap-[25px] md:px-5 md:grid-cols-2 sm:grid-cols-1">
       <!-- Card Item -->
-      <div class="rounded-xl bg-white shadow-[0px_0px_11px_rgba(153,153,153,0.3)]">
+      <div class="rounded-xl bg-white shadow-[0px_0px_11px_rgba(153,153,153,0.3)] hover:shadow-lg transition-shadow">
         <div class="overflow-hidden rounded-xl">
           <img src="./assets/news1.jpg" class="h-auto w-full max-w-full" alt="">
         </div>
@@ -1377,7 +1386,7 @@
         </div>
       </div>
       <!-- Card Item -->
-      <div class="rounded-xl bg-white shadow-[0px_0px_11px_rgba(153,153,153,0.3)]">
+      <div class="rounded-xl bg-white shadow-[0px_0px_11px_rgba(153,153,153,0.3)] hover:shadow-lg transition-shadow">
         <div class="overflow-hidden rounded-xl">
           <img src="./assets/news2.jpg" class="h-auto w-full max-w-full" alt="">
         </div>
@@ -1411,7 +1420,7 @@
         </div>
       </div>
       <!-- Card Item -->
-      <div class="rounded-xl bg-white shadow-[0px_0px_11px_rgba(153,153,153,0.3)] md:col-span-2 sm:col-span-1 ">
+      <div class="rounded-xl bg-white shadow-[0px_0px_11px_rgba(153,153,153,0.3)] hover:shadow-lg transition-shadow md:col-span-2 sm:col-span-1">
         <div class="overflow-hidden rounded-xl">
           <img src="./assets/news3.jpg" class="h-auto w-full max-w-full" alt="">
         </div>
@@ -1458,7 +1467,7 @@
         <p class="font-normal mt-1 text-base text-lightgray max-w-[471px] xs:text-sm">Lorem ipsum dolor sit amet consectetur. Velit enim est urna est massa cras. Sed varius convallis netus aliquet duis ut.</p>
         <form action="#" class="mt-[60px] flex md:mt-6">
           <input type="text" placeholder="Enter your mail" class="-mr-[15px] w-full py-[14px] px-5 rounded-xl bg-white shadow-[0px_1px_15px_rgba(0,0,0,0.15)] focus:outline-blueviolet placeholder:text-blueviolet placeholder:text-[13px] placeholder:font-medium">
-          <button type="sumbit" class="flex bg-blueviolet items-center justify-center text-white px-10 rounded-lg text-lg shrink-0 sm:text-base xs:text-sm xs:px-6">Join Now</button>
+          <button type="sumbit" class="flex bg-blueviolet items-center justify-center text-white px-10 rounded-lg text-lg shrink-0 sm:text-base xs:text-sm xs:px-6 hover:bg-[#6933e8] transition-colors">Join Now</button>
         </form>
       </div>
     </div>
